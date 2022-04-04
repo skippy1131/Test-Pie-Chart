@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript">
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer",
+	{
+		title:{
+			text: "This is a test Pie Chart Thing using CanvasJS"
+		},
+		legend: {
+			maxWidth: 350,
+			itemWidth: 120
+		},
+		data: [
+		{
+			type: "pie",
+			showInLegend: true,
+			legendText: "{indexLabel}",
+      toolTipContent: "This is {indexLabel}, at value {y}. :)",
+			dataPoints: [
+				{ y: 10, indexLabel: "Option 1" },
+				{ y: 15, indexLabel: "Option 2" },
+				{ y: 20, indexLabel: "Option 3" },
+				{ y: 12, indexLabel: "Option 4"},
+				{ y: 6, indexLabel: "Option 5" },
+				{ y: 30, indexLabel: "Option 6"},
+				{ y: 25, indexLabel: "Option 7"}
+			]
+		}
+		]
+	});
+	chart.render();
+}
+</script>
+<script type="text/javascript" src="canvasjs.min.js"></script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<h1>There's a few ways to do this. This one uses a program, but this just goes to be a proof of concept. It would be pretty easy to make one from scratch. You can integrate with a dataset automatically using JSON files (pseudo text files, just in the form of a list) or just embed it into the link of the site itself using some wacky encryption stuff. Both methods are feasable, and I can help you with them if you want. If not I don't wanna be pushy. Just thought it was fun to mess around and make because I don't have much experience with Canvases in JS, and I find it interesting (gotta get all the practice I can). Anyway that's my proof of concept. If I got it wrong, my bad lol. Good luck with whatever you're doing lol. If you need help lmk <3.</h1>
+</body>
+</html>
